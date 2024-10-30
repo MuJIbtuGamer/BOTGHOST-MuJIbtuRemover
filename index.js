@@ -19,7 +19,7 @@ app.listen(port, () => {
   console.log('\x1b[36m[ SERVER ]\x1b[0m', '\x1b[32m SH : http://localhost:' + port + ' ✅\x1b[0m');
 });
 
-const statusMessages = [/*"Слушает ваши команды 😁", */"Я на тех. работах 🛠"];
+const statusMessages = [/*"Слушает ваши команды 😁", */"Я на тех. работах! 🛠", "Я не работаю! 🛠"];
 const statusTypes = [/*'online', */'dnd'];
 let currentStatusIndex = 0;
 let currentTypeIndex = 0;
