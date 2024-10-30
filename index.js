@@ -20,7 +20,7 @@ app.listen(port, () => {
 });
 
 const statusMessages = [/*"Слушает ваши команды 😁", */"Я на тех. работах 🛠"];
-const statusTypes = [/*'online', */'idle'];
+const statusTypes = [/*'online', */'dnd'];
 let currentStatusIndex = 0;
 let currentTypeIndex = 0;
 
