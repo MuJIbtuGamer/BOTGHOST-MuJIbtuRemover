@@ -51,12 +51,12 @@ function updateStatus() {
 function heartbeat() {
   setInterval(() => {
     console.log('\x1b[35m[ HEARTBEAT ]\x1b[0m', `Bot is alive at ${new Date().toLocaleTimeString()}`);
-  }, 30000);
+  }, 60000);
 }
 
 client.once('ready', () => {
   updateStatus();
-  setInterval(updateStatus, 10000);
+  setInterval(updateStatus, 30000);
   heartbeat();
   console.log('\x1b[36m[ INFO ]\x1b[0m', `\x1b[34mPing: ${client.ws.ping} ms \x1b[0m`);
 });
